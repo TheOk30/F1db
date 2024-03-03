@@ -84,3 +84,30 @@ VALUES
 ('São Paulo', (SELECT CountryID FROM countries WHERE CountryName = 'Brazil')),
 ('Las Vegas', (SELECT CountryID FROM countries WHERE CountryName = 'United States')),
 ('Abu Dhabi', (SELECT CountryID FROM countries WHERE CountryName = 'United Arab Emirates'));
+
+
+INSERT INTO circuits (CircuitName, NumberOfLaps, RaceLength, CircuitStatus, NumberOfDRSStraights, CityID, CircuitTypeID)
+VALUES
+  ('Bahrain International Circuit', 57, 308.238, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Sakhir'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Jeddah Corniche Circuit', 50, 308.75, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Jeddah'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Albert Park Circuit', 58, 307.574, 'Active', 4, (SELECT CityID FROM cities WHERE CityName = 'Melbourne'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Baku City Circuit', 51, 306.049, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Baku'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Miami International Autodrome', 57, 321.93, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Miami Gardens'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')),
+  ('Circuit de Monaco', 78, 260.286, 'Active', 1, (SELECT CityID FROM cities WHERE CityName = 'Monte Carlo'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Circuit de Barcelona-Catalunya', 66, 308.424, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Barcelona'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Circuit Gilles Villeneuve', 70, 305.27, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Montreal'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Silverstone Circuit', 52, 306.198, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Silverstone'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Red Bull Ring', 71, 307.146,  'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Spielberg'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Circuit Paul Ricard', 53, 309.69, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Le Castellet'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Hungaroring', 70, 306.63, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Budapest'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Circuit de Spa-Francorchamps', 44, 308.052, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Spa-Francorchamps'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Circuit Zandvoort', 72, 306.649, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Zandvoort'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Autodromo Nazionale di Monza', 53, 306.72,  'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Monza'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Marina Bay Street Circuit', 61, 308.706, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Singapore'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Suzuka International Racing Course', 53, 307.471, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Suzuka'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Circuit of the Americas', 56, 308.405, 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Austin'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Autódromo Hermanos Rodríguez', 71, 305.584,  'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Mexico City'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Autódromo José Carlos Pace', 71, 305.909, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'São Paulo'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')), 
+  ('Las Vegas Street Circuit', 50, 310 , 'Active', 3, (SELECT CityID FROM cities WHERE CityName = 'Las Vegas'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Street Circuit')), 
+  ('Yas Marina Circuit', 58, 306.183, 'Active', 2, (SELECT CityID FROM cities WHERE CityName = 'Abu Dhabi'), (SELECT CircuitTypeID FROM circuitTypes WHERE CircuitType = 'Race Circuit')); 
+
