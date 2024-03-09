@@ -13,7 +13,7 @@ BEGIN
     INNER JOIN points p ON r.GridPosition = p.GridPosition
     WHERE YEAR(r.RaceDate) = season_year
     GROUP BY d.DriverID
-    ORDER BY (SUM(p.Points) + SUM(r.IsFastestLap)) DESC
+    ORDER BY (SUM(p.Points) + SUM(r.IsFastestLap AND GridPosition <= 10)) DESC
     LIMIT 1;
 
     RETURN topDriverID;
