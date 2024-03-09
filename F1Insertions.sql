@@ -412,51 +412,51 @@ VALUES
 -- Inserting the race information for the Austrian Grand Prix on 2023-07-02 with grid positions from 1 to 20
 INSERT INTO Races (RaceDate, CircuitID, DriverID, GridPosition, StartedPosition, IsfastestLap)
 VALUES 
-('2023-07-02', 9, 1, 1, 1, 1), -- Max Verstappen (fastest lap)
-('2023-07-02', 9, 11, 2, 2, 0), -- Charles Leclerc
-('2023-07-02', 9, 15, 3, 15, 0), -- Sergio Pérez
-('2023-07-02', 9, 17, 4, 4, 0), -- Lando Norris
-('2023-07-02', 9, 7, 5, 7, 0), -- Fernando Alonso
-('2023-07-02', 9, 6, 6, 3, 0), -- Carlos Sainz
-('2023-07-02', 9, 3, 7, 11, 0), -- George Russell
-('2023-07-02', 9, 4, 8, 5, 0), -- Lewis Hamilton
-('2023-07-02', 9, 9, 9, 6, 0), -- Lance Stroll
-('2023-07-02', 9, 10, 10, 9, 0), -- Pierre Gasly
-('2023-07-02', 9, 12, 11, 10, 0), -- Alexander Albon
-('2023-07-02', 9, 13, 12, 17, 0), -- Guanyu Zhou
-('2023-07-02', 9, 20, 13, 18, 0), -- Logan Sargeant
-('2023-07-02', 9, 14, 14, 12, 0), -- Esteban Ocon
-('2023-07-02', 9, 16, 15, 14, 0), -- Valtteri Bottas
-('2023-07-02', 9, 8, 16, 13, 0), -- Oscar Piastri
-('2023-07-02', 9, 18, 17, 19, 0), -- Nyck de Vries
-('2023-07-02', 9, 19, 18, 20, 0), -- Kevin Magnussen
-('2023-07-02', 9, 5, 19, 16, 0), -- Yuki Tsunoda
-('2023-07-02', 9, 2, 20, 8, 0); -- Nico Hülkenberg
+('2023-07-02', 9, 3, 1, 1, 1), -- Max Verstappen (fastest lap)
+('2023-07-02', 9, 1, 2, 2, 0), -- Charles Leclerc
+('2023-07-02', 9, 2, 3, 15, 0), -- Sergio Pérez
+('2023-07-02', 9, 9, 4, 4, 0), -- Lando Norris
+('2023-07-02', 9, 11, 5, 7, 0), -- Fernando Alonso
+('2023-07-02', 9, 4, 6, 3, 0), -- Carlos Sainz
+('2023-07-02', 9, 5, 7, 11, 0), -- George Russell
+('2023-07-02', 9, 6, 8, 5, 0), -- Lewis Hamilton
+('2023-07-02', 9, 12, 9, 6, 0), -- Lance Stroll
+('2023-07-02', 9, 8, 10, 9, 0), -- Pierre Gasly
+('2023-07-02', 9, 15, 11, 10, 0), -- Alexander Albon
+('2023-07-02', 9, 18, 12, 17, 0), -- Guanyu Zhou
+('2023-07-02', 9, 16, 13, 18, 0), -- Logan Sargeant
+('2023-07-02', 9, 7, 14, 12, 0), -- Esteban Ocon
+('2023-07-02', 9, 17, 15, 14, 0), -- Valtteri Bottas
+('2023-07-02', 9, 10, 16, 13, 0), -- Oscar Piastri
+('2023-07-02', 9, 20, 17, 19, 0), -- Nyck de Vries
+('2023-07-02', 9, 13, 18, 20, 0), -- Kevin Magnussen
+('2023-07-02', 9, 19, 19, 16, 0), -- Yuki Tsunoda
+('2023-07-02', 9, 14, 20, 8, 0); -- Nico Hülkenberg
 
 
 -- Inserting the race information for the British Grand Prix on 2023-07-09 with grid positions from 1 to 20
 INSERT INTO Races (RaceDate, CircuitID, DriverID, GridPosition, StartedPosition, IsfastestLap)
 VALUES 
-('2023-07-09', 10, 1, 1, 1, 1), -- Max Verstappen (fastest lap)
-('2023-07-09', 10, 17, 2, 2, 0), -- Lando Norris
-('2023-07-09', 10, 4, 3, 7, 0), -- Lewis Hamilton
-('2023-07-09', 10, 8, 4, 3, 0), -- Oscar Piastri
-('2023-07-09', 10, 3, 5, 6, 0), -- George Russell
-('2023-07-09', 10, 15, 6, 15, 0), -- Sergio Pérez
-('2023-07-09', 10, 7, 7, 9, 0), -- Fernando Alonso
-('2023-07-09', 10, 12, 8, 8, 0), -- Alexander Albon
-('2023-07-09', 10, 9, 9, 4, 0), -- Charles Leclerc
-('2023-07-09', 10, 6, 10, 5, 0), -- Carlos Sainz
-('2023-07-09', 10, 20, 11, 14, 0), -- Logan Sargeant
-('2023-07-09', 10, 10, 12, 20, 0), -- Valtteri Bottas
-('2023-07-09', 10, 2, 13, 11, 0), -- Nico Hülkenberg
-('2023-07-09', 10, 14, 14, 12, 0), -- Lance Stroll
-('2023-07-09', 10, 13, 15, 17, 0), -- Guanyu Zhou
-('2023-07-09', 10, 5, 16, 16, 0), -- Yuki Tsunoda
-('2023-07-09', 10, 18, 17, 18, 0), -- Nyck de Vries
-('2023-07-09', 10, 16, 18, 10, 0), -- Pierre Gasly
-('2023-07-09', 10, 19, 19, 19, 0), -- Kevin Magnussen
-('2023-07-09', 10, 11, 20, 13, 0); -- Esteban Ocon
+('2023-07-09', 10, 3, 1, 1, 1), -- Max Verstappen (fastest lap)
+('2023-07-09', 10, 9, 2, 2, 0), -- Lando Norris
+('2023-07-09', 10, 6, 3, 7, 0), -- Lewis Hamilton
+('2023-07-09', 10, 10, 4, 3, 0), -- Oscar Piastri
+('2023-07-09', 10, 5, 5, 6, 0), -- George Russell
+('2023-07-09', 10, 2, 6, 15, 0), -- Sergio Pérez
+('2023-07-09', 10, 11, 7, 9, 0), -- Fernando Alonso
+('2023-07-09', 10, 15, 8, 8, 0), -- Alexander Albon
+('2023-07-09', 10, 1, 9, 4, 0), -- Charles Leclerc
+('2023-07-09', 10, 4, 10, 5, 0), -- Carlos Sainz
+('2023-07-09', 10, 16, 11, 14, 0), -- Logan Sargeant
+('2023-07-09', 10, 17, 12, 20, 0), -- Valtteri Bottas
+('2023-07-09', 10, 14, 13, 11, 0), -- Nico Hülkenberg
+('2023-07-09', 10, 12, 14, 12, 0), -- Lance Stroll
+('2023-07-09', 10, 18, 15, 17, 0), -- Guanyu Zhou
+('2023-07-09', 10, 19, 16, 16, 0), -- Yuki Tsunoda
+('2023-07-09', 10, 20, 17, 18, 0), -- Nyck de Vries
+('2023-07-09', 10, 8, 18, 10, 0), -- Pierre Gasly
+('2023-07-09', 10, 13, 19, 19, 0), -- Kevin Magnussen
+('2023-07-09', 10, 7, 20, 13, 0); -- Esteban Ocon
 
 
 
