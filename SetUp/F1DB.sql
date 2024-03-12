@@ -24,8 +24,7 @@ CREATE TABLE IF NOT EXISTS drivers (
     CountryID INT NOT NULL,
     YearStarted YEAR NOT NULL,
     YearRetired YEAR,
-    DriverStatus ENUM('Active', 'Retired') NOT NULL,
-    WorldChampionships INT DEFAULT 0,
+
     FOREIGN KEY (CountryID) REFERENCES countries(CountryID)
 );
 
@@ -63,7 +62,6 @@ CREATE TABLE IF NOT EXISTS teamPrincipals (
     CountryID INT NOT NULL,
     YearStarted YEAR NOT NULL,
     YearRetired YEAR,
-    PrincipleStatus ENUM('Active', 'Retired') NOT NULL,
     FOREIGN KEY (CountryID) REFERENCES countries(CountryID)
 );
 
@@ -79,7 +77,6 @@ CREATE TABLE IF NOT EXISTS teams (
     TeamName VARCHAR(100) NOT NULL,
     CountryID INT NOT NULL,
     TeamStatus ENUM('Active', 'Retired') NOT NULL,
-    WorldChampionships INT DEFAULT 0,
     FOREIGN KEY (CountryID) REFERENCES countries(CountryID)
 );
 

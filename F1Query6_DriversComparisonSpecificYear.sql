@@ -8,7 +8,8 @@ BEGIN
         DriverTotalSeasonPolls(season_year, drivers.DriverID) AS `Poles`,
         DriverTotalSeasonPodiums(season_year, drivers.DriverID) AS `Podiums`,
         AVG(races.GridPosition) AS `AvgGridPosition`,
-        AVG(races.StartedPosition) AS `AvgStartingPosition`
+        AVG(races.StartedPosition) AS `AvgStartingPosition`,
+		AVG(races.GridPosition - races.StartedPosition) AS `AvgPositionDifference`
     FROM
         drivers
     JOIN

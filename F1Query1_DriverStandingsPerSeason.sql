@@ -10,7 +10,7 @@ BEGIN
         -- DriverTotalSeasonPoints FUNCTION
 		SELECT 
 			CONCAT(drivers.FirstName, ' ', drivers.LastName) AS `DriverName`, 
-			DriverTotalSeasonPoints(2023, drivers.DriverID) AS `Points This Season`
+			DriverTotalSeasonPoints(season_year, drivers.DriverID) AS `Points This Season`
 		FROM 
 			drivers
 		WHERE
