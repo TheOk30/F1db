@@ -19,11 +19,11 @@ BEGIN
         AVG(races.GridPosition) - AVG(races.StartedPosition) AS `AverageStartingAndFinishingDev`
     FROM
         teams
-    LEFT JOIN
+     JOIN
         teamDrivers ON teams.TeamID = teamDrivers.TeamID
-    LEFT JOIN
+     JOIN
         drivers ON teamDrivers.DriverID = drivers.DriverID
-    LEFT JOIN
+     JOIN
         races ON drivers.DriverID = races.DriverID
     WHERE
         YEAR(races.RaceDate) = season_year 

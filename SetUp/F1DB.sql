@@ -116,6 +116,8 @@ CREATE TABLE IF NOT EXISTS Race (
     CircuitID INT,
     DriverID INT,
     GridPosition INT,
+    StartedPosition INT,
+    IsfastestLap INT DEFAULT 0,
     PRIMARY KEY (RaceDate, CircuitID, DriverID, GridPosition),
     FOREIGN KEY (CircuitID) REFERENCES circuits(CircuitID),
     FOREIGN KEY (DriverID) REFERENCES drivers(DriverID),
